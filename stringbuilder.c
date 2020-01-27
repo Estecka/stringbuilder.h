@@ -6,7 +6,7 @@
 /*   By: abaur <abaur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:01:12 by abaur             #+#    #+#             */
-/*   Updated: 2020/01/20 13:46:59 by abaur            ###   ########.fr       */
+/*   Updated: 2020/01/27 12:20:37 by abaur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,6 @@ char	*strbflush(t_strb *builder)
 	char *result;
 
 	result = builder->content;
+	free(builder);
 	return (result);
 }
